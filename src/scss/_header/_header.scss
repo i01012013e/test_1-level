@@ -1,0 +1,74 @@
+.header {
+    &__inner {
+        min-height: 230px;
+        position: relative;
+    }
+
+    .logo {
+        max-width: 273px;
+        max-height: 210px;
+        position: absolute;
+        top: 65px;
+    }
+
+    &__contacts-box {
+        position: absolute;
+        top: 45px;
+        right: 0;
+    }
+
+    &__phone {
+        @extend %os-condensed-300;
+        font-size: 40px;
+        line-height: 46px;
+        color: $accent;
+    }
+
+    &__btn {
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 24px;
+        color: $accent;
+        border: none;
+        border-bottom: 2px dashed $accent;
+        background-color: transparent;
+        float: right;
+    }
+}
+.menu-nav {
+    background-color: $accent;
+    &__list {
+        min-height: 80px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin: 26px 22px 19px 0px;
+        display: flex;
+        &::after {
+            content: "|";
+            font-size: 30px;
+            color: #fff;
+            margin-left: 22px;
+        }
+    }
+    &__item:last-child {
+        margin: 26px 0px 19px 0px;
+        &::after {
+            content: "";
+            margin-left: 0;
+        }
+    }
+
+    &__link {
+        font-family: "PT Sans";
+        font-weight: 400;
+        font-size: 30px;
+        color: #fff;
+        &:hover {
+            border-bottom: 1px solid #fff;
+        }
+    }
+}

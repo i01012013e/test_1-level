@@ -3,3 +3,24 @@
 @import "_var.scss";
 @import "_extend.scss";
 
+html,
+body {
+    height: 100%;
+}
+body{
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 22px;
+    color: $accent;
+    display: flex;
+    flex-direction: column;
+}
+ .main{
+     flex-grow: 1;
+ }
+
+ .container {
+     max-width: 1000px;
+     padding: 0 10px;
+     margin: 0 auto;
+}
