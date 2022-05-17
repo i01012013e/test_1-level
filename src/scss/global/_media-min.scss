@@ -1,0 +1,5 @@
+@mixin min1200 {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
