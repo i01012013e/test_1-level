@@ -1,0 +1,40 @@
+.footer {
+    background-color: $accent;
+    &__inner {
+        padding: 50px 0 52px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__copy {
+        color: #fff;
+        width: 230px;
+        font-weight: 400;
+    }
+}
+.footer-menu-nav {
+    margin-right: 129px;
+    &__link {
+        color: #fff;
+        line-height: 26px;
+        text-decoration: underline;
+    }
+}
+.footer-services {
+    display: flex;
+    width: 225px;
+    &__img {
+        margin-top: 6px;
+        width: 36px;
+        height: 36px;
+    }
+
+    &__text {
+        color: #fff;
+        margin-left: 10px;
+        & span {
+            text-decoration: underline;
+        }
+    }
+}
