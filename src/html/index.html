@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test_1-level</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-    @@include('_header/_header.html')
-    <main class="main"></main>
-    @@include('_footer/_footer.html')
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>test_1-level</title>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/jquery.min.css" />
+        <link rel="stylesheet" href="./css/style.min.css" />
+    </head>
+    <body>
+        @@include('_header/_header.html')
+        <main class="main">
+            @@include('_top-slider/_top-slider.html')
+            @@include('_catalog/_catalog.html')
+            @@include('_modal-feedback/_modal-feedback.html')
+        </main>
+        @@include('_footer/_footer.html')
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/main.min.js"></script>
+    </body>
 </html>
