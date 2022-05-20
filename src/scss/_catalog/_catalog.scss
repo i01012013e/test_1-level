@@ -111,6 +111,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 15px;
         grid-row: auto;
+        @include max-1000{
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     &__item {
         background-color: #dcdcdc;
@@ -175,9 +178,16 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include max-1000{
+        margin-bottom: 228px;
+    }
     &__text {
         max-width: 374px;
         font-size: 14px;
         line-height: 22px;
+        @include max-1000{
+            margin-bottom: 20px;
+        }
+
     }
 }
