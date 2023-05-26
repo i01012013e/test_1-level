@@ -1,0 +1,46 @@
+.top-slider {
+    background-color: #dcdcdc;
+    &__inner {
+        position: relative;
+        height: 400px;
+    }
+    &__content-box {
+    }
+    &__item {
+    }
+    &__content {
+        height: 400px;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center 100%;
+        @include max-1000 {
+            background: none !important;
+        }
+    }
+}
+.btn {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translate(0, -50%);
+    max-width: 1000px;
+    width: 100%;
+    padding-right: 20px;
+}
+.slick-arrow {
+    font-size: 0;
+}
+.slick-prev {
+    background-image: url(../img/images/slick-arrow-prev.jpg);
+}
+.slick-next {
+    background-image: url(../img/images/slick-arrow-next.jpg);
+}
+.slick-prev,
+.slick-next {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 34px;
+    height: 61px;
+}
